@@ -2,7 +2,7 @@ from flask import Flask
 
 application=Flask('myApp')
 
-application.route('/')
+@application.route('/')
 def index():
     return 'hello world'
 
