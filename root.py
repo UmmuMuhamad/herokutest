@@ -4,7 +4,7 @@ application=Flask('myApp')
 
 @application.route('/')
 def index():
-    return 'hello worldddd'
+   return render_template('index.html')
 
 if __name__ == '__main__':
     application.run(debug=False)    
